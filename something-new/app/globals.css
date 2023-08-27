@@ -1,0 +1,229 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(5, 8, 42);
+            color:white;
+            font-family: 'Poppins', sans-serif;
+
+        }
+        nav{
+         display: flex;   
+         justify-content: space-around;
+         align-items: center;
+         height: 80px;
+         background-color: rgb(7, 22, 64);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+
+
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(118, 118, 221);
+            font-size: 1.01rem;
+        }
+
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 10px 84px;
+        }
+
+    .left{
+        font-size: 1.5rem;
+        
+    }
+    .firstSection{
+        flex-direction: column-reverse;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 130px 0;
+        
+    }
+    .firstSection div{
+       width: 20px 0;
+    
+    }
+    .leftSection{
+       
+        font-size:30px;
+          
+        
+    }
+    .leftSection .btn{
+        padding: 12px;
+       background:rgb(92, 15, 92);
+       color:white;
+       border: 2px solid white;
+       border-radius: 6px;
+       font-size: 20px;
+       cursor: pointer;
+         
+       
+   }
+    .purple{
+        color: rgb(143, 42, 236);
+
+
+
+    } 
+    
+    .text-gray{
+        color: gray;
+    }
+    
+    #element{
+        color: rgb(143, 42, 236);
+    }
+    .secondSection{
+         max-width: 80vw;
+         margin: auto;
+    }
+
+    .secondSection h1{
+        font-size: 1.5rem;
+    }
+    
+    .secondSection .box{
+        background: white;
+        width:78vw;
+        height:2px;
+        margin:56px 0;
+        display: flex;
+    }
+
+    .secondSection .vertical{
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 6vw ;
+    }
+    .image-top{
+        width:23px; 
+        position: relative;
+        top: -32px;
+        left:-9px;
+    }
+
+    .vertical-title{
+        position: relative;
+        top:75px;
+        left: 45px ;
+        width:150px;
+        font: 14px;
+
+    }
+    .vertical-desc{
+        position: relative;
+        top:86px;
+        color: gray;
+        width: 150px;
+        font-size: 9px;
+        
+
+    }
+
+    .footer{
+        background-color: rgb(15, 13, 20);
+        
+    }
+
+    .footer{
+        display: flex;
+        padding: 23px 122px;
+        justify-content:space-evenly ;
+    }
+    .footer ul {
+        list-style: none;
+
+    }
+    .footer > div{
+        width:223px ;
+    }
+    footer .footer-rights{
+        text-align: center;
+        color: gray;
+        padding: 12px 0;
+    }
+
+    @media screen and (max-width: 1400px){
+        body{ 
+            /*background-color: red;*/
+
+        }
+        .box{
+            flex-direction: column;
+        }
+        .secondSection .vertical{
+            height: unset;
+        }
+        .vertical-title {
+            left: 45px;
+        
+        }
+        .vertical-desc{
+            left:45px;
+        }
+        .secondSection .box{
+            width: 50vw;
+        }
+        nav{
+            flex-direction: column;
+        }
+       
+        .firstSection{
+            flex-direction: column-reverse;
+        }
+        .leftSection{
+            width: 100% !important; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .secondSection{
+            height: 100vh;
+        }
+        .rightSection{
+            width: 400px !important;
+            display: flex;
+            justify-content: center;
+        }
+        .rightSection img{
+            width: 50vw;
+            margin-bottom:73px ;
+        }
+
+        .image-top{
+            top: 133px;
+        }
+
+        .secondSection{
+           
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        body{
+            min-width: fit-content;
+        }
+
+    }
